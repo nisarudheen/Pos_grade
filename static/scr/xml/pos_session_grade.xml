@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+   <t t-name="ProductItem" t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension" owl="1">
+     <xpath expr="//div[hasclass('product-img')]" position="after">
+          <br/>
+         <span t-log="props.product.grade"/>
+          <span style="padding:10px">Grade: <t t-esc="props.product.grade"/></span>
+      </xpath>
+   </t>
+</templates>
